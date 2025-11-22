@@ -1,240 +1,183 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PERSONAL FINANCE MANAGER</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="STYLESHEET" href="personal.css">
-    
-</head>
-<body>
-    <header>
-        <div class="navbar">
-            <div class="navlogo border">
-                <div class="logo"></div>
-            </div>
-
-            <div class="navaddress border">
-                <pre class="add-first">Saving &#x20b9 From  </pre>
-            <div class="add-icon">
-                <i class="fa-solid fa-location-dot"></i>
-                <p class="add-sec">India</p>
-            </div>
-            </div>
-            <div class="nav-search">
-                <select class="search-select">
-                    <option>All</option>
-                </select>
-                <input placeholder="Search SaveIT" class="search-input">
-                <div class="search-icon">
-                    <i class="fa-solid fa-magnifying-glass" onclick="performSearch()"></i>
-                </div>
-                <script>
-                    function performSearch() {
-                        // Get the selected category and search input value
-                        var selectedCategory = document.getElementById("searchCategory").value;
-                        var searchInputValue = document.getElementById("searchInput").value;
-                
-                        // You can implement your search logic here
-                        // For demonstration, let's just log the values to the console
-                        console.log("Selected Category: " + selectedCategory);
-                        console.log("Search Input: " + searchInputValue);
-                
-                        // Add your search logic here, such as making an API call or filtering results
-                        // You can update the UI based on the search results
-                    }
-                </script>
-            </div>
-            <div class="nav-signin border">
-                <p><span>Hello,Sign IN</span></p>
-                <p class="nav-second"><a href="login.html">Account</a></p>
-            </div>
-            <div class="nav-articles border">
-                <p><span>Read Some,</span></p>
-                <p class="nav-second"><a href="https://economictimes.indiatimes.com/news/economy/articlelist/1286551815.cms">Articles</a></p>
-            </div>
-            <div class="nav-billion border">
-                <i class="fa-solid fa-sack-dollar"></i>
-                 <a href="https://www.forbes.com/real-time-billionaires/">Billionare List</a>
-            </div>
-        </div>
-        <!--panel starts from here...-->
-        <div class="panel">
-            <div class="all-panel">
-                <i class="fa-solid fa-bars"></i>
-                All
-            </div>
-            <div class="panel-ops">
-                <p>Today's Articles</p>
-                <p>Customer care </p>
-                <p>Finance Management</p>
-                <p>About US</p>
-            </div>
-            <div class="panel-books">
-                Get Finance Related Books
-            </div>
-        </div>
-    </header>
-    <div class="herosection">
-        <div class="hero-msg">
-            You are on SaveIT website.You can manage ur finances , get ur budget fixed along with some entertaining articles about saving money,<a href="signup.html">Click here to sign in</a>
-        </div>
-    </div>
-    
-        <div class="Loan-section">
-            <div class="box2 box">
-               <div class="box2-content">
-                <h2>Personal Loan</h2>
-                <div class="box2-img" style="background-image: url('personal_loan.jpg');"></div>
-               <p class="p1">Get Personal loans easily At very low interests!</p>
-                <p class="p2"><a href="https://www.sbi.co.in/web/personal-banking/loans/personal-loans">apply here..</a></p>
-               </div>
-            </div>
-            <div class="box3 box">  <div class="box2-content">
-                <h2>Get Credit Card</h2>
-                <div class="box2-img" style="background-image: url('credit-card\ \(2\).jpg');"></div>
-                <p class="p1">Get Credit Cards easily At no Conditions!</p>
-                <p class="p2"><a href="https://www.idfcfirstbank.com/credit-card/ntb-diy/apply?utm_source=Partner&utm_medium=Adcanopus_Digital_Media&utm_campaign=4282_____&msclkid=7500e630b7311f84f19f8354c795a74a">apply here..</a></p>
-               </div></div>
-            <div class="box4 box">  <div class="box2-content">
-                <h2>Insurance</h2>
-                <div class="box2-img" style="background-image: url('insurance.jpg');"></div>
-                <p class="p1">The most important thing in life is safety,Be safe Get ur insurance Now!</p>
-                <p class="p2"><a href="https://www.iciciprulife.com/term-insurance-plans/iprotect-smart-term-insurance-calculator.html?UID=1266&cid=Search:Bing::Text:DM:iPS:Bing_IPRU-Search-Generic_Compare-BMM-RX-O&O-Desktop-Broad-New-1266:RSA-Pay7Yrscover85Yrs::Eng::1266:cpc::&msclkid=0f1a372b4b4f132394fa524f3a555a50&utm_source=bing&utm_medium=cpc&utm_campaign=Bing_IPRU-Search-Generic_Compare-BMM-RX-O%26O-Desktop-Broad-New-1266&utm_term=best%20term%20insurance%20compare&utm_content=Compare%20Term%20Insurance">apply here..</a></p>
-               </div></div>
-            <div class="box5 box">  <div class="box2-content">
-                <h2>Banking</h2>
-                <div class="box2-img" style="background-image: url('banking.jpg');"></div>
-                <p class="p1">Money matters everywhere and anywhere,Start your online banking Now!</p>
-                <p class="p2"><a href="https://bankofindia.co.in/">apply here..</a></p>
-               </div></div>
-        </div>
-        <div class="aboutus">
-            <div class="box1"><u>ABOUT US</u><br>
-                <p class="box1-para1">We are dedicated to helping individuals and families achieve financial stability and prosperity. Our team of experienced financial advisors provides expert guidance on budgeting, investing, debt management, and retirement planning.
-    With a mission to empower our clients with the knowledge and tools they need to make informed financial decisions, we strive to create a secure and prosperous future for all.</p>
-            </div>
-            <div class="box6" > 
-            <div class="box6-content"><h2>INCOME CALCULATOR</h2>
-                <section class="income">
-                    <h2>Income</h2>
-                    <form>
-                        <label for="incomeDescription">Description:</label>
-                        <input type="text" id="incomeDescription" name="incomeDescription" required><br>
-                        <br>
-                        <label for="incomeAmount">Amount:</label>
-                        <input type="number" id="incomeAmount" name="incomeAmount" required><br>
-                        <br>
-                        <input type="submit" value="Add Income" alt="hi1">
-        
-        
-                       
-                        
-                    </form>
-                </section>
-                <section class="expenses">
-                    <h2>Expenses</h2>
-                    
-                    <form>
-                        <label for="expenseDescription">Description:</label>
-                        <input type="text" id="expenseDescription" name="expenseDescription" required><br>
-                        <br>
-                        <label for="expenseAmount">Amount:</label>
-                        
-                        <input type="number" id="expenseAmount" name="expenseAmount" required><br>
-                        <br>
-                        <input type="submit" value="Add Expense" onclick="generateRandomNumber()">
-                        
-
-<script>
-    function generateRandomNumber() {
-        var randomNumber = Math.floor(Math.random() * 100) + 1; // Random number between 1 and 100
-        alert('rs. to save:  ₹' + randomNumber);
-    }
-</script>
-
-                    </form>
-                </section>
-                <section class="summary">
-                    <h2>Summary</h2>
-                    <p>Total Income: <span id="totalIncome">0</span></p>
-                    <p>Total Expenses: <span id="totalExpenses">0</span></p>
-                    <p>Balance: <span id="balance">0</span></p>
-                </section>
-            </div>
-            </div>
-            <h2 class="articleheading">SOME ARTICLES TO SAVE UR MONEY-</h2><br>
-            <div class="Loan-section">
-                <div class="box2 box">
-                   <div class="box2-content">
-                    <h2>8 TRICKS TO SAVE UR MONEY?</h2>
-                    <div class="box2-img" style="background-image: url('savemoney.jpg');"></div>
-                    <p class="p2"><a href="https://bettermoneyhabits.bankofamerica.com/en/saving-budgeting/ways-to-save-money">CLICK HERE</a></p>
-                   </div>
-                </div>
-                <div class="box3 box">  <div class="box2-content">
-                    <h2>9 TIPS TO INVEST UR MONEY RIGHT?</h2>
-                    <div class="box2-img" style="background-image: url('investmoney.jpg');"></div>
-                    <p class="p2"><a href="https://www.financialexpress.com/money/9-important-and-effective-tips-for-first-time-investors-2139704/">CLICK HERE..</a></p>
-                   </div></div>
-                <div class="box4 box">  <div class="box2-content">
-                    <h2>BITCOIN IS BETTER,GOOD OR BAD?</h2>
-                    <div class="box2-img" style="background-image: url('bitcoin.jpg');"></div>
-                
-                    <p class="p2"><a href="https://applemagazine.com/the-ethics-of-bitcoin-is-it-a-force-for-good-or-evil/58790">CLICK HERE...</a></p>
-                   </div></div>
-                
-                   </div></div>
-            </div>
-            <section class="newsletter">
-                <h2><u>Subscribe to our Newsletter</u></h2><br>
-                <form action="subscribe.php" method="post">
-                    <input type="email" name="email" placeholder="Enter your email" required>
-                    <input type="submit" value="Subscribe" onclick="confirmAction()">
-                    <script>
-                        // Inline JavaScript
-                        function confirmAction() {
-        var confirmed = confirm('Are you sure you want to Subscribe to Our NewsLetter?');
-        if (confirmed) {
-            alert('Welcome,Thankyou for subscribing ,have a nice day');
-        } else {
-            alert('Action canceled.');
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>C++ Developer Portfolio — CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
         }
-        
-    }
-            
-                    </script>
-                </form>
-            </section>    
+        h1,h2,h3,h4,h5,h6 {
+            font-family: "Rubik", "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI";
+            letter-spacing: -0.01em;
+        }
+        header h1 { font-weight: 700; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-300 antialiased">
+
+  <div class="max-w-5xl mx-auto px-6 py-12">
+
+    <!-- CV layout: sidebar (photo + contact + skills) + main (summary, experience, education, projects) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Sidebar -->
+      <aside class="md:col-span-1 bg-gray-800/60 p-6 rounded-lg border border-gray-700">
+        <!-- Profile photo: put your image as 'photo.jpg' next to this HTML file, or update the src -->
+        <div class="flex flex-col items-center text-center">
+          <div class="w-36 h-36 mb-4 rounded-full overflow-hidden border-4 border-indigo-600">
+            <img src="photo.jpg" alt="Unnat Singh Photo" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/300?text=Your+Photo'">
+          </div>
+
+          <h1 class="text-2xl text-white font-bold">Unnat Singh</h1>
+          <p class="text-indigo-300 mt-1">Aspiring Full Stack Developer</p>
+
+          <div class="mt-4 w-full">
+            <a href="mailto:unnat205@gmail.com" class="block bg-indigo-600 hover:bg-indigo-700 text-white text-sm py-2 rounded-md text-center">
+              <i class="fas fa-envelope mr-2"></i> unnat205@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <hr class="my-5 border-gray-700"/>
+
+        <div>
+          <h3 class="text-sm text-gray-400 uppercase tracking-wide mb-3">Skills</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2 py-1 bg-gray-700 rounded text-xs text-indigo-300 border border-gray-600">C++</span>
+            <span class="px-2 py-1 bg-gray-700 rounded text-xs text-indigo-300 border border-gray-600">JAVA</span>
+            <span class="px-2 py-1 bg-gray-700 rounded text-xs text-indigo-300 border border-gray-600">Data Structures</span>
+            <span class="px-2 py-1 bg-gray-700 rounded text-xs text-indigo-300 border border-gray-600">Algorithms</span>
+            <span class="px-2 py-1 bg-gray-700 rounded text-xs text-indigo-300 border border-gray-600">STL</span>
+            <span class="px-2 py-1 bg-gray-700 rounded text-xs text-indigo-300 border border-gray-600">Git</span>
+            <span class="px-2 py-1 bg-gray-700 rounded text-xs text-indigo-300 border border-gray-600">React</span>
+            <span class="px-2 py-1 bg-gray-700 rounded text-xs text-indigo-300 border border-gray-600">Node.js</span>
+          </div>
+        </div>
+
+        <hr class="my-5 border-gray-700"/>
+
+        <div>
+          <h3 class="text-sm text-gray-400 uppercase tracking-wide mb-3">Contact</h3>
+          <ul class="text-sm space-y-1 text-gray-300">
+            <li><i class="fas fa-phone-alt mr-2 text-indigo-400"></i> +91 — 8053503183</li>
+            <li><i class="fas fa-envelope mr-2 text-indigo-400"></i> unnat205@gmail.com</li>
+            <li><i class="fas fa-map-marker-alt mr-2 text-indigo-400"></i> Agra, Uttar Pradesh</li>
+            <li><i class="fab fa-github mr-2 text-indigo-400"></i> github.com/unnatunnat28</li>
+          </ul>
+        </div>
+
+      </aside>
+
+      <!-- Main content -->
+      <main class="md:col-span-2 space-y-8">
+
+        <!-- Summary -->
+        <section class="bg-gray-800/40 p-6 rounded-lg border border-gray-700">
+          <div class="flex justify-between items-start">
+            <div>
+              <h2 class="text-2xl text-white font-semibold">Professional Summary</h2>
+              <p class="mt-2 text-gray-300">Aspiring Full Stack and C++ developer with strong foundation in data structures, algorithms and object-oriented programming. Passionate about building efficient, maintainable systems and creating polished web experiences.</p>
+            </div>
+            <div class="text-sm text-gray-400">
+              <p><strong>Availability:</strong> Internship</p>
+              <p class="mt-1"><strong>Location:</strong> Lovely Professional University</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="bg-gray-800/40 p-6 rounded-lg border border-gray-700">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-xl font-semibold text-white">Experience & Projects</h3>
+            <span class="text-sm text-gray-400">Selected highlights</span>
+          </div>
+
+          <div class="space-y-5 text-gray-300">
+            <article>
+              <div class="flex justify-between items-baseline">
+                <h4 class="text-lg font-medium text-white">Data Structures & Algorithms in C++</h4>
+                <span class="text-sm text-gray-500">Sep 2024 - Nov 2025</span>
+              </div>
+              <p class="text-indigo-300">Lovely Professional University</p>
+              <ul class="list-disc list-inside mt-2 space-y-1">
+                <li>Built and optimized core data structures: Linked Lists, Stacks, Queues, Trees and Graph utilities.</li>
+                <li>Improved algorithmic performance, implementing efficient sorting and searching solutions.</li>
+                <li>Applied memory-management best practices for low-overhead C++ implementations.</li>
+              </ul>
+            </article>
+
+            <article>
+              <div class="flex justify-between items-baseline">
+                <h4 class="text-lg font-medium text-white">PackMan1 (Java Swing)</h4>
+                <a href="https://github.com/unnatunnat28/Packman1" class="text-indigo-400 text-sm hover:text-indigo-300">View Repo</a>
+              </div>
+              <p class="text-gray-400 mt-2">Recreated classic arcade mechanics with custom collision detection, scoring, and simple AI for enemies.</p>
+            </article>
+
+            <article>
+              <div class="flex justify-between items-baseline">
+                <h4 class="text-lg font-medium text-white">Personal Portfolio (This site)</h4>
+                <a href="https://github.com/unnatunnat28/persional.html" class="text-indigo-400 text-sm hover:text-indigo-300">View Repo</a>
+              </div>
+              <p class="text-gray-400 mt-2">Responsive portfolio built using Tailwind CSS to showcase projects, skills, and contact details.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Education -->
+        <section class="bg-gray-800/40 p-6 rounded-lg border border-gray-700">
+          <h3 class="text-xl font-semibold text-white mb-3">Education</h3>
+          <div class="space-y-4 text-gray-300">
+            <div class="flex justify-between">
+              <div>
+                <p class="font-medium text-white">B.Tech — Computer Science</p>
+                <p class="text-indigo-300">Lovely Professional University</p>
+              </div>
+              <span class="text-sm text-gray-400">2023 - Present</span>
+            </div>
+
+            <div class="flex justify-between">
+              <div>
+                <p class="font-medium text-white">Coursework</p>
+                <p class="text-gray-400">Algorithms, OS, DBMS, Networking, OOP</p>
+              </div>
+              <span class="text-sm text-gray-400">GPA — 6.9</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Additional links / footer -->
+        <section class="bg-gray-800/40 p-6 rounded-lg border border-gray-700 text-gray-300">
+          <h3 class="text-lg font-semibold text-white mb-3">Other</h3>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <h4 class="text-sm text-gray-400 uppercase mb-2">Certifications</h4>
+              <ul class="text-sm space-y-1">
+                <li>Java Programming – iamNeo – Lovely Professional University</li>
+                <li>Data Structures and Algorithms – iamNeo – Lovely Professional University</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-sm text-gray-400 uppercase mb-2">Languages</h4>
+              <ul class="text-sm space-y-1">
+                <li>English — Professional</li>
+                <li>Hindi — Native</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
     </div>
-    <section class="social-media">
-        <div class="social-contents">
-        <h2>Connect with Us</h2>
-        <ul>
-            <li>
-                <a href="https://www.facebook.com" target="_blank">
-                    <img src="data:image/jpeg;base64,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" height="50" alt="Facebook">
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/YourTwitter" target="_blank">
-                    <img src="https://th.bing.com/th/id/OIP.iOMCnBCoDdlrtkBaTlZfigHaHa?w=170&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7"height="50" alt="Twitter">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/yourprofile/" target="_blank">
-                    <img src="https://th.bing.com/th/id/OIP.aGsC0wuuVdQM3TNX4wIamgHaEK?w=276&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7"height="37" alt="LinkedIn">
-                </a>
-            </li>
-            <!-- Add more social media links as needed -->
-        </ul>
-    </section></div>
-    <footer>
-        <pre>&copy; 2023 SaveIT. All Rights Reserved .
-        &copy; UNNAT </pre>
-             </footer>
+
+  </div>
+
 </body>
-
 </html>
-
